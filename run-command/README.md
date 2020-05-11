@@ -27,5 +27,7 @@ docker run \
 
 |item|description|
 |----|-----------| 
-| `-t` | pseudo-tty for shell like output.  Most commonly paired with:
-| `-i` | interactive shell.  necessary for running commands that accept input 
+| `-t`      | pseudo-tty for shell like output.  Most commonly paired with:
+| `-i`      | interactive shell.  necessary for running commands that accept input 
+| `busybox` | docker image to run
+| `bc`      | command in container to run interactively
