@@ -47,7 +47,7 @@ docker run    \
 |item|description|
 |----|-----------| 
 | `-v ${PWD}/README.md:/data/README.md:ro` | mount existing file. it must exist, otherwise it'll create an empty. directory on the container. `${PWD}` is for current diretory and probably the most portable form (less portable alternatives: $PWD, $(pwd), etc).  Finally, make it read-only with `:ro`.
-| `-w="/data"` | set the working diretory
+| `-w="/data"`    | set the working diretory
 | `cat README.md` | cats out the file in host's working directory
 
 
@@ -66,4 +66,6 @@ docker run             \
 
 |item|description|
 |----|-----------| 
-| `-u $(id -u):$(id -g)` | Run the container with UID/GID of current user.  Very useful for not leaving root owned files everywhere.
+| `-v ${PWD}:/data` | mount the local directory instead of individual file.  Necessary to create a new file and easier to write
+| `-u $(id -u):$(id -g)` | run the container with UID/GID of current user.  Very useful for not leaving root owned files everywhere.
+
