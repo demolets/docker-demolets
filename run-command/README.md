@@ -10,8 +10,8 @@ docker run \
    hello-world
 ```
 
-| | |
-|-|-| 
+|item|description|
+|----|-----------| 
 | `--rm` | remove the container after the run is complete.  This is important for one-off bash-like commands.
 
 ## Run an interactive command
@@ -25,7 +25,7 @@ docker run \
   bc
 ```
 
-| | |
-|-|-| 
+|item|description|
+|----|-----------| 
 | `-t` | pseudo-tty for shell like output.  Most commonly paired with:
 | `-i` | interactive shell.  necessary for running commands that accept input 
