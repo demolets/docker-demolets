@@ -24,7 +24,7 @@ alias dockervim="        \
 |item|description|
 |----|-----------| 
 | `alias dockervim=" \` | start with dbl-quotes.  This is much easier to use envs
-| `-v "'${PWD}'":/data` | need ${PWD} in single quotes so it evaluates every time command is run
+| `-v "'${PWD}'":/data` | need `${PWD}` in single quotes so it evaluates every time command is run
 | `vi`                  | runs `vi ` and saves relative to current directory.  absolute paths on 
 
 
