@@ -14,12 +14,8 @@ alias dockervim="        \
     vi                   \
 "
 ```
-|example|notes|
-|-------|-----|
-| `dockervim foo.txt`       | creates `foo.txt` in current directory and saves here
-| `dockervim /data/foo.txt` | same as above, but remember `/data` is the container path
-| `dockervim /tmp/foo.txt`  | will not save to host and be destroyed as soon as container is destroyed
 
+### Notes
 
 |item|description|
 |----|-----------| 
@@ -28,3 +24,12 @@ alias dockervim="        \
 | `vi`                  | runs `vi ` and saves relative to current directory.  absolute paths on 
 
 
+
+### Examples
+
+|item|notes|
+|-------|-----|
+| `dockervim`               | runs `vim`.  Save file using internal write command
+| `dockervim foo.txt`       | creates `foo.txt` in current directory and saves here
+| `dockervim /data/foo.txt` | same as above, but remember `/data` is the container path
+| `dockervim /tmp/foo.txt`  | will not save to host and be destroyed as soon as container is destroyed
